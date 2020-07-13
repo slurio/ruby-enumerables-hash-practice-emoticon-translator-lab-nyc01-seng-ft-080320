@@ -36,11 +36,10 @@ def get_english_meaning(file, symbol)
   library.each do |key, value|
     if value[:japanese] == symbol
       english_meaning = key
-      binding.pry
     end
     if english_meaning.empty?
       english_meaning = "Sorry, that emoticon was not found"
     end
-    english_meaning
   end
+  english_meaning
 end
